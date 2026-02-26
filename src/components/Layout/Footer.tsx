@@ -5,7 +5,7 @@ import { Globe, Share2, Instagram, Infinity } from 'lucide-react';
 const Footer: React.FC = () => {
   return (
     <footer className="bg-gray-50 pt-24 pb-12 px-6 lg:px-20 border-t border-gray-200">
-      <div className="max-w-[1440px] mx-auto">
+      <div className="max-w-360 mx-auto">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20">
           <div>
             <div className="flex items-center gap-2 mb-6">

@@ -31,7 +31,7 @@ const ProductDetail: React.FC = () => {
   };
 
   return (
-    <div className="py-12 px-6 lg:px-20 max-w-[1440px] mx-auto min-h-screen">
+    <div className="py-12 px-6 lg:px-20 max-w-360 mx-auto min-h-screen">
       <button 
         onClick={() => navigate(-1)}
         className="flex items-center gap-2 text-gray-500 hover:text-black transition-colors mb-8 font-bold text-sm"
@@ -45,7 +45,7 @@ const ProductDetail: React.FC = () => {
         <motion.div 
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
-          className="aspect-[3/4] rounded-2xl overflow-hidden bg-gray-100"
+          className="aspect-3/4 rounded-2xl overflow-hidden bg-gray-100"
         >
           <img src={product.image} alt={product.name} className="w-full h-full object-cover" />
         </motion.div>

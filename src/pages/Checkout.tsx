@@ -38,7 +38,7 @@ const Checkout: React.FC = () => {
   }
 
   return (
-    <div className="py-12 px-6 lg:px-20 max-w-[1440px] mx-auto min-h-screen">
+    <div className="py-12 px-6 lg:px-20 max-w-360 mx-auto min-h-screen">
       <button 
         onClick={() => navigate(-1)}
         className="flex items-center gap-2 text-gray-500 hover:text-black transition-colors mb-8 font-bold text-sm"

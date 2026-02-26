@@ -32,7 +32,7 @@ const Cart: React.FC = () => {
         <div className="lg:col-span-2 space-y-8">
           <AnimatePresence>
             {cart.map(item => (
-              <motion.div 
+              <motion.div
                 key={item.id}
                 layout
                 initial={{ opacity: 0, y: 20 }}
@@ -43,7 +43,7 @@ const Cart: React.FC = () => {
                 <div className="size-32 sm:size-40 rounded-xl overflow-hidden bg-gray-100 flex-shrink-0">
                   <img src={item.image} alt={item.name} className="w-full h-full object-cover" />
                 </div>
-                
+
                 <div className="flex flex-col flex-1">
                   <div className="flex justify-between items-start mb-2">
                     <div>
@@ -55,14 +55,14 @@ const Cart: React.FC = () => {
 
                   <div className="mt-auto flex items-center justify-between">
                     <div className="flex items-center border border-gray-200 rounded-lg overflow-hidden">
-                      <button 
+                      <button
                         onClick={() => updateQuantity(item.id, item.quantity - 1)}
                         className="p-2 hover:bg-gray-100 transition-colors"
                       >
                         <Minus size={16} />
                       </button>
                       <span className="px-4 font-bold">{item.quantity}</span>
-                      <button 
+                      <button
                         onClick={() => updateQuantity(item.id, item.quantity + 1)}
                         className="p-2 hover:bg-gray-100 transition-colors"
                       >
@@ -70,7 +70,7 @@ const Cart: React.FC = () => {
                       </button>
                     </div>
 
-                    <button 
+                    <button
                       onClick={() => removeFromCart(item.id)}
                       className="text-red-500 hover:text-red-600 transition-colors p-2"
                     >
@@ -87,7 +87,7 @@ const Cart: React.FC = () => {
         <div className="lg:col-span-1">
           <div className="bg-gray-50 rounded-2xl p-8 sticky top-32">
             <h2 className="text-2xl font-black mb-8">SUMMARY</h2>
-            
+
             <div className="space-y-4 mb-8">
               <div className="flex justify-between text-gray-500">
                 <span>Subtotal</span>
@@ -104,7 +104,7 @@ const Cart: React.FC = () => {
               </div>
             </div>
 
-            <button 
+            <button
               onClick={() => navigate('/checkout')}
               className="w-full py-5 bg-black text-white font-bold rounded-xl hover:bg-blue-600 transition-all flex items-center justify-center gap-2"
             >

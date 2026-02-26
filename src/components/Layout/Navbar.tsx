@@ -9,7 +9,7 @@ const Navbar: React.FC = () => {
 
   return (
     <header className="sticky top-0 z-50 bg-white/70 backdrop-blur-xl border-b border-black/5 px-6 lg:px-20 py-4">
-      <div className="max-w-[1440px] mx-auto flex items-center justify-between">
+      <div className="max-w-360 mx-auto flex items-center justify-between">
         <div className="flex items-center gap-12">
           <Link to="/" className="flex items-center gap-2 group cursor-pointer">
             <div className="size-8 bg-black flex items-center justify-center rounded-lg text-white">

@@ -15,7 +15,7 @@ export default function App() {
       <Router>
         <div className="min-h-screen flex flex-col bg-white text-black font-sans selection:bg-blue-600 selection:text-white">
           <Navbar />
-          <main className="flex-grow">
+          <main className="grow">
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/shop" element={<Shop />} />
