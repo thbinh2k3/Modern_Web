@@ -1,6 +1,3 @@
-<div align="center">
-<img width="1200" height="475" alt="Modern Fashion Banner" src="https://github.com/user-attachments/assets/0aa67016-6eaf-458a-adb2-6e31a0763ed6" />
-
 🛍️ Modern Fashion E-commerce
 Modern Fashion là một ứng dụng mua sắm thời trang hiện đại được xây dựng trên nền tảng React và Vite, tích hợp trí tuệ nhân tạo để tối ưu trải nghiệm người dùng.
 
@@ -24,13 +21,6 @@ Cài đặt thư viện:
 
 PowerShell
 npm install
-Cấu hình biến môi trường:
-Tạo file .env.local tại thư mục gốc và thêm mã API của bạn:
-
-Đoạn mã
-GEMINI_API_KEY=your_api_key_here
-Khởi chạy dự án:
-
 PowerShell
 npm run dev
 Sau đó truy cập: http://localhost:5173
